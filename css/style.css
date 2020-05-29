@@ -1,0 +1,39 @@
+body {
+	background-image: url('https://pymunk-tutorial.readthedocs.io/en/latest/_images/background.png');
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+	margin: 20px;
+}
+.bird{
+  width:20%;
+  z-index:1;
+}
+#redb {
+  position:absolute;
+  top:120px;
+  left:0px;
+  animation : one 12s ease-in infinite alternate; 
+}
+@keyframes one{
+  from{
+    left:0px;
+  }
+  to{
+    left:1200px;
+  }
+}
+#blueb {
+  position:absolute;
+  top:200px;
+  right:0px;
+  animation : two 12s ease-in infinite alternate; 
+  z-index:-1;
+}
+@keyframes two{
+  from{
+    right:0px;
+  }
+  to{
+    right:1200px;
+  }
